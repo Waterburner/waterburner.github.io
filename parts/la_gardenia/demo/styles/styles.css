@@ -1,0 +1,28 @@
+/*common nav styles */
+.navigation-wrapper {
+    height: 190px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    /* Flexbox container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;
+}
+
+.contact-hours-wrapper {
+    color: royalblue;
+}
+
+.address-wrapper {
+    color: red;
+}
+
+/* footer */
+
+.footer > .navigation-wrapper {
+    display: grid;
+    grid-column: 1fr;
+    
+}
+
