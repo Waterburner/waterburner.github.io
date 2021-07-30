@@ -110,6 +110,11 @@ h1 {
   transition: 0.2s;
 }
 
+#item6:hover + .wrap > #subitem6 {
+  left: 0px;
+  transition: 0.2s;
+}
+
 /* END OF HOVER EFFECT */
 
 
