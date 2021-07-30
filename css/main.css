@@ -1,0 +1,13 @@
+
+/* ======= BACKGROUND ======= */
+
+html { 
+	background: url("css_pic/Gray-Background-NP19.jpg") no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* ======= END OF BACKGROUND ======= */
+

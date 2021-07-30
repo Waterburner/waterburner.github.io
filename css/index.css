@@ -1,0 +1,130 @@
+/* ======= BACKGROUND ======= */
+
+body { 
+    background: url("css_pic/Logo_Gray-Background-NP19.jpg") no-repeat center center fixed; 
+    
+/*body {
+  background: url("http://dxsohu.com/wp-content/uploads/2017/06/Gray-Background-NP19.jpg")
+    no-repeat
+    center
+    center
+    fixed;*/
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+
+}
+
+/* ======= END OF BACKGROUND ======= */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #444444;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Helvetica, sans-serif;
+}
+
+.menu {
+  position: fixed;
+  bottom: 100px;
+  width: 100%;
+  font-size: 24px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  transition: 0.5s;
+}
+
+.wrap {
+
+  overflow: hidden;
+  display: inline-block;
+  min-width: 300px;
+  padding: 2px 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.field {
+  display: block;
+  font-family: cursive;
+  position: relative;
+  left: -250%;
+  transition: 0.2s;
+  margin: 0px 0px 0px 15px;
+}
+
+/* HOVER EFFECT */
+
+.items:hover {
+    background-color: gray;
+  transition: 0.2s;
+}
+
+.items:hover > a {
+  color: black;
+}
+
+#item1:hover + .wrap > #subitem1 {
+  left: 0px;
+  transition: 0.3s;
+}
+
+#item2:hover + .wrap > #subitem2 {
+  left: 0px;
+  transition: 0.2s;
+}
+
+#item3:hover + .wrap > #subitem3 {
+  left: 0px;
+  transition: 0.2s;
+}
+
+#item4:hover + .wrap > #subitem4 {
+  left: 0px;
+  transition: 0.2s;
+}
+
+#item5:hover + .wrap > #subitem5 {
+  left: 0px;
+  transition: 0.2s;
+}
+
+/* END OF HOVER EFFECT */
+
+
+.items {
+  border-right: 2px solid black; 
+  margin-right: 5px;
+
+  min-width: 270px;
+}
+
+.width {
+  padding-right: 0px;
+
+}
+
+#title {
+  display: inline-block;
+}
