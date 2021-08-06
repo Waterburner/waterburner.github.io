@@ -33,7 +33,7 @@
     height: 400px;
     background-image: url(../images/backgrounds/fries-multiply-bg.jpg);
     background-color: #cea135;
-    border-top: 10px solid white;
+    border-top: 1px solid white;
     color: #11122b;
     display: flex;
     justify-content: center;
