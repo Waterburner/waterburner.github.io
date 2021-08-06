@@ -1,6 +1,8 @@
 /* Hero section styles */
 .hero-section {
-    background-image: url(../images/backgrounds/fries-hero-bg.jpg);
+    /* background-image: url(../images/backgrounds/fries-hero-bg.jpg); */
+    
+    background-image: url(../images/new/taco_w_avocado.jpg);
     padding: 100px;
     height: 300px;
     background-attachment: fixed;

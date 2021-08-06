@@ -6,7 +6,7 @@
 
 .skewed-header > .header-bg {
     position: absolute;
-    top: 0;
+    top: 0px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -17,6 +17,8 @@
     transform: skewY(-6deg);
     transform-origin: top left;
     filter: brightness(50%);
+    
+    background-position: right;
 }
 
 .skewed-header > .skewed-header-wrapper {
