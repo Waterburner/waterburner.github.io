@@ -1,0 +1,11 @@
+<svg viewBox="0 0 355 340" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5">
+  <path fill="none" d="M0 0h354.612v413.197H0z"/>
+  <path d="M344.071 19.1c0-6.126-4.974-11.1-11.1-11.1H21.1C14.974 8 10 12.974 10 19.1v51.8C10 77.026 14.974 82 21.1 82h311.871c6.126 0 11.1-4.974 11.1-11.1V19.1z" fill="none" stroke="#59bf90" stroke-width="15"/>
+  <path d="M33.4 28.05l20.1 17-20.2 16.9.1-33.9z" fill="#59bf90" fill-rule="nonzero"/>
+  <path d="M344.071 112.094c0-6.126-4.974-11.1-11.1-11.1H21.1c-6.126 0-11.1 4.974-11.1 11.1v51.8c0 6.126 4.974 11.1 11.1 11.1h311.871c6.126 0 11.1-4.974 11.1-11.1v-51.8z" fill="none" stroke="#59bf90" stroke-width="15"/>
+  <path d="M33.4 121.044l20.1 17-20.2 16.9.1-33.9z" fill="#59bf90" fill-rule="nonzero"/>
+  <g>
+    <path d="M344.071 204.45c0-5.767-4.683-10.45-10.45-10.45H20.45C14.683 194 10 198.683 10 204.45v188.101c0 5.767 4.683 10.45 10.45 10.45h313.171c5.767 0 10.45-4.683 10.45-10.45V204.45z" fill="none" stroke="#59bf90" stroke-width="15"/>
+    <path d="M60.4 219.415l-17 20.2-16.9-20.2h33.9z" fill="#59bf90" fill-rule="nonzero"/>
+  </g>
+</svg>
