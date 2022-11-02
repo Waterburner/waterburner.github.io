@@ -16,6 +16,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+*/
 
 /* ======= END OF BACKGROUND ======= */
 
@@ -113,6 +114,11 @@ h1 {
     transition: 0.2s;
 }
 
+#item7:hover + .wrap > #subitem7 {
+    left: 0px;
+    transition: 0.2s;
+}
+
 /* END OF HOVER EFFECT */
 
 .items {
@@ -130,15 +136,40 @@ h1 {
     display: inline-block;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 740px) {
+    .row {
+        padding-top: 10px;
+    }
+
+    .row > div {
+        text-align: center;
+    }
+
     .field {
         left: 0px;
+        margin: 0px;
     }
 
     .items {
-        background-color: gray;
+        border-right: none;
+        margin-right: 0;
+        min-width: 0px;
     }
+
     .items > a {
         color: black;
+    }
+
+    .menu {
+        padding-top: 100px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: auto;
+    }
+    .col-md-3 {
+        padding: 0px;
     }
 }
