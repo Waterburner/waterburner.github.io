@@ -114,6 +114,11 @@ h1 {
     transition: 0.2s;
 }
 
+#item6_1:hover + .wrap > #subitem6_1 {
+    left: 0px;
+    transition: 0.2s;
+}
+
 #item7:hover + .wrap > #subitem7 {
     left: 0px;
     transition: 0.2s;
