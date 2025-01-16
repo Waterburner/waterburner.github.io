@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.471aa83f.css",
+    "main.js": "/static/js/main.d98ead93.js",
+    "static/js/453.bdad480d.chunk.js": "/static/js/453.bdad480d.chunk.js",
+    "static/media/small-bus-icon.png": "/static/media/small-bus-icon.ee02336913ae842eb97b.png",
+    "index.html": "/index.html",
+    "main.471aa83f.css.map": "/static/css/main.471aa83f.css.map",
+    "main.d98ead93.js.map": "/static/js/main.d98ead93.js.map",
+    "453.bdad480d.chunk.js.map": "/static/js/453.bdad480d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.471aa83f.css",
+    "static/js/main.d98ead93.js"
+  ]
+}
