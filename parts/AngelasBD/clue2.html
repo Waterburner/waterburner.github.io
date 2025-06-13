@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mission 1 briefing</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles/clue2.css" />
+    </head>
+    <body>
+        <div class="background">
+            <div class="help">
+                <h1 class="help-header">Can't solve the riddle?</h1>
+                <button onclick="showTip()">explanation</button>
+
+                <div class="container" id="explanation">
+                    <p class="tip" id="tip">
+                        Ah, that was an easy one! <br />
+                        “Waves crash” = near the seawall/ocean <br />
+                        “Beans are brewed” = coffee <br />
+                        “Seaside stop” = hints it's by the coast <br />
+                        “Salt meets steam” = ocean + coffee <br />
+                        “Where day meets night” = poetic way to describe a chill
+                        hangout spot like a café<br />
+                        <a href="https://maps.app.goo.gl/FozxQjzDneMXPv9x5"
+                            ><button class="answer-btn">
+                                Show location
+                            </button></a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function showTip() {
+            const tip = (document.getElementById("tip").style.visibility =
+                "visible");
+        }
+    </script>
+</html>

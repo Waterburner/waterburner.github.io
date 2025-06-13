@@ -1,0 +1,78 @@
+body {
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 3rem;
+}
+button {
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.tip {
+    visibility: collapse;
+    background-color: black;
+}
+.answer {
+    background-color: red;
+}
+
+.background {
+    position: relative;
+}
+
+.help {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: pink;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    color: gray;
+}
+
+.help-header {
+    background-color: rgba(81, 81, 81, 0.3);
+}
+
+.help {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    color: pink;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* Full-page gray overlay for login */
+.login-container {
+    background-color: rgba(0, 0, 0, 1); /* semi-transparent dark overlay */
+    color: white;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 200px; /* move login content down slightly */
+}

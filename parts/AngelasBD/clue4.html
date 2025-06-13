@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angela's B-Day: Clue 4</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles/clue4.css" />
+    </head>
+    <body>
+        <div class="background">
+            <!-- Full-screen login overlay -->
+            <div class="login-container" id="login">
+                <h1>Clue 4 Access</h1>
+                <p>Enter the ID number:</p>
+                <input type="text" id="passcode" placeholder="Enter passcode" />
+                <button onclick="checkPasscode()">Submit</button>
+                <p id="error" class="error"></p>
+            </div>
+            <div class="help" id="help" style="display: none">
+                <h1 class="help-header">Can't solve the riddle?</h1>
+                <button onclick="showTip()">explanation</button>
+
+                <!-- Hidden clue content, revealed after login -->
+                <div class="container" id="explanation">
+                    <p class="tip" id="tip">
+                        Ah, that was tricky one! <br />
+                        "Fruits in a whirl, sweet and bright"<br />
+                        → Refers to blended fruit — likely a smoothie or
+                        juice.<br />
+
+                        "Sip the sunshine, taste delight."<br />
+                        → Poetic description of enjoying a refreshing, fruity
+                        drink, especially in a sunny place like Galveston.<br />
+                        LOOK FOR ONE CLOSER TO 23rd Street <br />
+                        <a href="https://maps.app.goo.gl/nKGuHr4FNYz1E7fa9"
+                            ><button class="answer-btn">
+                                Show location
+                            </button></a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function checkPasscode() {
+                const input = document.getElementById("passcode").value.trim();
+                if (input === "start123") {
+                    document.getElementById("login").style.display = "none";
+                    document.getElementById("help").style.display = "block";
+                } else {
+                    document.getElementById("error").textContent =
+                        "Incorrect passcode. Try again!";
+                }
+            }
+
+            function showTip() {
+                const tip = (document.getElementById("tip").style.visibility =
+                    "visible");
+            }
+        </script>
+    </body>
+</html>

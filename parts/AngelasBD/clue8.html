@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angela's B-Day: Final!</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles/clue8.css" />
+    </head>
+    <body>
+        <div class="background">
+            <!-- Full-screen login overlay -->
+            <div class="login-container" id="login">
+                <h1>The treasure?</h1>
+                <p>Enter the ID number:</p>
+                <input type="text" id="passcode" placeholder="Enter passcode" />
+                <button onclick="checkPasscode()">Submit</button>
+                <p id="error" class="error"></p>
+            </div>
+            <div class="help" id="help" style="display: none">
+                <h1 class="help-header">Can't solve the riddle?</h1>
+                <button onclick="showTip()">explanation</button>
+
+                <!-- Hidden clue content, revealed after login -->
+                <div class="container" id="explanation">
+                    <p class="tip" id="tip">
+                        Use the Maaaaap! <br />
+                        “Beneath the guardian’s watchful eye,”<br />
+                        → The "guardian" is a metaphor for a lifeguard.
+                        Lifeguards are often described as watchful protectors of
+                        the beach and swimmers<br />
+
+                        “Where sun and safety meet the sky,” <br />
+                        → This describes a sunny beach, where safety is ensured
+                        by lifeguards — again supporting the lifeguard
+                        station/tower interpretation.<br />
+
+                        “Your treasure sleeps in sandy bed,”<br />
+                        → The clue or treasure is buried in the sand — likely
+                        near the tower.<br />
+
+                        “Just steps below where they oversee ahead.”<br />
+                        → Lifeguards typically sit in elevated towers, so the
+                        clue is just beneath or in front of one, right in the
+                        sand.<br />
+                        <br />
+
+                        <a href="https://maps.app.goo.gl/ndGJk6gW6YP2D7j16"
+                            ><button class="answer-btn">
+                                Show location
+                            </button></a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function checkPasscode() {
+                const input = document.getElementById("passcode").value.trim();
+                if (input === "start123") {
+                    document.getElementById("login").style.display = "none";
+                    document.getElementById("help").style.display = "block";
+                } else {
+                    document.getElementById("error").textContent =
+                        "Incorrect passcode. Try again!";
+                }
+            }
+
+            function showTip() {
+                const tip = (document.getElementById("tip").style.visibility =
+                    "visible");
+            }
+        </script>
+    </body>
+</html>

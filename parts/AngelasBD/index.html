@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clue 1</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>
+            Welcome to <br />
+            Angela's Birthday <br />
+            adventure!
+        </h1>
+
+        <form onsubmit="checkPasscode(event)">
+            <p>Enter your ID number to start:</p>
+            <input type="text" id="passcode" placeholder="ID number" />
+            <br />
+            <button type="submit">Submit</button>
+            <p id="error" style="color: red"></p>
+        </form>
+
+        <script>
+            function checkPasscode(event) {
+                event.preventDefault(); // Prevent actual form submission
+                const code = document.getElementById("passcode").value.trim();
+                if (code === "start123") {
+                    window.location.href = "clue2.html";
+                } else {
+                    document.getElementById("error").textContent =
+                        "Incorrect ID number. Check your birthday ID number and try again!";
+                }
+            }
+        </script>
+    </body>
+</html>

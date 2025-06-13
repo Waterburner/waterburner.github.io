@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angela's B-Day: Clue 6</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles/clue6.css" />
+    </head>
+    <body>
+        <div class="background">
+            <!-- Full-screen login overlay -->
+            <div class="login-container" id="login">
+                <h1>Clue 6 Access</h1>
+                <p>Enter the ID number:</p>
+                <input type="text" id="passcode" placeholder="Enter passcode" />
+                <button onclick="checkPasscode()">Submit</button>
+                <p id="error" class="error"></p>
+            </div>
+            <div class="help" id="help" style="display: none">
+                <h1 class="help-header">Can't solve the riddle?</h1>
+                <button onclick="showTip()">explanation</button>
+
+                <!-- Hidden clue content, revealed after login -->
+                <div class="container" id="explanation">
+                    <p class="tip" id="tip">
+                        <b>Actually</b> that was super-duper easy one! <br />
+                        “A key in hand, a box awaits,” <br />
+                        → This implies a locked P.O. box or similar personal
+                        mailbox — something you open with a key. <br />
+                        “On twenty-first, where shipping's fate.” <br />
+                        → This gives a specific location clue: likely 21st
+                        Street, and a place associated with shipping — like a
+                        post office, FedEx, UPS, etc. <br />
+                        “Letters, parcels, treasures sent,” <br />
+                        → Very clearly describing a mail or parcel service.
+                        <br />
+                        “Unlock the box where clues are pent.” <br />
+                        → You’re meant to open a specific mailbox or drop box to
+                        retrieve the next clue.<br />
+
+                        <a href="https://maps.app.goo.gl/jSSsLqQsUEKHozL28"
+                            ><button class="answer-btn">
+                                Show location
+                            </button></a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function checkPasscode() {
+                const input = document.getElementById("passcode").value.trim();
+                if (input === "start123") {
+                    document.getElementById("login").style.display = "none";
+                    document.getElementById("help").style.display = "block";
+                } else {
+                    document.getElementById("error").textContent =
+                        "Incorrect passcode. Try again!";
+                }
+            }
+
+            function showTip() {
+                const tip = (document.getElementById("tip").style.visibility =
+                    "visible");
+            }
+        </script>
+    </body>
+</html>

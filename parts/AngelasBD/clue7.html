@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Angela's B-Day: Clue 7</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles/clue7.css" />
+    </head>
+    <body>
+        <div class="background">
+            <!-- Full-screen login overlay -->
+            <div class="login-container" id="login">
+                <h1>Clue 7 Access</h1>
+                <p>Enter the ID number:</p>
+                <input type="text" id="passcode" placeholder="Enter passcode" />
+                <button onclick="checkPasscode()">Submit</button>
+                <p id="error" class="error"></p>
+            </div>
+            <div class="help" id="help" style="display: none">
+                <h1 class="help-header">Can't solve the riddle?</h1>
+                <button onclick="showTip()">explanation</button>
+
+                <!-- Hidden clue content, revealed after login -->
+                <div class="container" id="explanation">
+                    <p class="tip" id="tip">
+                        And I thought you like this one! <br />
+                        “Pearls of sweetness, hidden small,” <br />
+                        → Refers to tapioca pearls — the small chewy balls found
+                        in boba tea.<br />
+
+                        “Within the cup where flavors call.”<br />
+                        → Boba tea is known for its flavored milk teas, fruit
+                        teas, and customizable drinks.<br />
+
+                        “A speckled dance, a secret brew,”<br />
+                        → The boba pearls "dance" or swirl inside the drink. The
+                        “secret brew” refers to the tea base or special house
+                        recipes.<br />
+
+                        “Your next clue waits in sips anew”<br />
+                        → Suggests the next clue is hidden in or handed with a
+                        drink — maybe even written on the cup<br />
+
+                        <a href="https://maps.app.goo.gl/wJv6PRVvTMrDDGwJ8"
+                            ><button class="answer-btn">
+                                Show location
+                            </button></a
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function checkPasscode() {
+                const input = document.getElementById("passcode").value.trim();
+                if (input === "start123") {
+                    document.getElementById("login").style.display = "none";
+                    document.getElementById("help").style.display = "block";
+                } else {
+                    document.getElementById("error").textContent =
+                        "Incorrect passcode. Try again!";
+                }
+            }
+
+            function showTip() {
+                const tip = (document.getElementById("tip").style.visibility =
+                    "visible");
+            }
+        </script>
+    </body>
+</html>
